@@ -16,9 +16,23 @@ connectmongodb();
 app.use(express.json());
 
 // API Routes
-app.get('/',(req,res)=>{
-    res.send('Welcome to CryptoStats API ,Made for KoinX by Ankush..');
-})
+app.get('/', (req, res) => {
+    res.json({
+        message: "Welcome to CryptoStats API, Made for KoinX by Ankush.",
+        activeRoutes: {
+            stats: [
+                "https://koinxbackend.vercel.app/api/stats?coin=ethereum",
+                "https://koinxbackend.vercel.app/api/stats?coin=bitcoin",
+                "https://koinxbackend.vercel.app/api/stats?coin=matic-network"
+            ],
+            deviation: [
+                "https://koinxbackend.vercel.app/api/deviation?coin=ethereum",
+                "https://koinxbackend.vercel.app/api/deviation?coin=bitcoin",
+                "https://koinxbackend.vercel.app/api/deviation?coin=matic-network"
+            ]
+        }
+    });
+});
 app.use('/api', statsRouter);
 app.use('/api', deviationRouter);
 
