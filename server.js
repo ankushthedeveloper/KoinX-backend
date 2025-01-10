@@ -16,8 +16,12 @@ connectmongodb();
 app.use(express.json());
 
 // API Routes
+app.get('/',(req,res)=>{
+    res.send('Welcome to CryptoStats API ,Made for KoinX by Ankush..');
+})
 app.use('/api', statsRouter);
 app.use('/api', deviationRouter);
+
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
