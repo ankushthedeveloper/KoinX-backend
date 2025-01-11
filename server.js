@@ -18,7 +18,8 @@ app.use(express.json());
 // API Routes
 app.get('/', (req, res) => {
     res.json({
-        message: "Welcome to CryptoStats API, Made for KoinX by Ankush.",
+        message1: "Welcome to CryptoStats API, Made for KoinX by Ankush.",
+        Important_Suggestion :"If :{This Serverless Function has timed out} comes after clicking any below link then refresh that link to get the data , this happens due to free tier less timeout",
         activeRoutes: {
             stats: [
                 "https://koinxbackend.vercel.app/api/stats?coin=ethereum",
