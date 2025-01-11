@@ -7,8 +7,11 @@
     ],
 
     "functions": {
-    "api/test.js": {
-      "maxDuration": 30 
+    "api/stats.js": {
+      "maxDuration": 30
+    },
+    "api/deviation.js": {
+      "maxDuration": 30
     },
     "api/*.js": {
       "maxDuration": 20 
