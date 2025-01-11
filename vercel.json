@@ -4,6 +4,15 @@
    "rewrites": [
         { "source": "/", "destination": "/server.js" },
         { "source": "/api/(.*)", "destination": "/server.js" }
-    ]
+    ],
+
+    "functions": {
+    "api/test.js": {
+      "maxDuration": 30 
+    },
+    "api/*.js": {
+      "maxDuration": 20 
+    }
+  }
 
 }
