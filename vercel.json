@@ -7,14 +7,14 @@
     ],
 
     "functions": {
-    "api/stats.js": {
-      "maxDuration": 30
+    "routes/stats.js": {
+      "maxDuration": 60
     },
-    "api/deviation.js": {
-      "maxDuration": 30
+    "routes/deviation.js": {
+      "maxDuration": 60
     },
-    "api/*.js": {
-      "maxDuration": 20 
+    "*.js": {
+      "maxDuration": 60 
     }
   }
 
