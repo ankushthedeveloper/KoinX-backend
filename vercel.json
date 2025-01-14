@@ -7,10 +7,9 @@
     ],
 
     "functions": {
-    "routes/stats.js": {
-    "*.js": {
-      "maxDuration": 60 
+   "server.js": {
+      "maxDuration": 60
     }
-     }
-      }
+  }
+
 }
