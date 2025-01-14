@@ -8,14 +8,9 @@
 
     "functions": {
     "routes/stats.js": {
-      "maxDuration": 60
-    },
-    "routes/deviation.js": {
-      "maxDuration": 60
-    },
     "*.js": {
       "maxDuration": 60 
     }
-  }
-
+     }
+      }
 }
